@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">UnitConverterApp</string>
+    <string-array name="units">
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+        <item>Pounds</item>
+        <item>Ounces</item>
+        <item>Tons</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string name="app_title">2.1P - Unit Converter App</string>
+    <string name="source_title">Source Unit</string>
+    <string name="destination_title">Destination Unit</string>
+    <string name="input_default">0</string>
+    <string name="input_unit"> </string>
+    <string name="output_value">0</string>
+    <string name="output_unit"> </string>
+    <string name="submit_button">CALCULATE</string>
+</resources>

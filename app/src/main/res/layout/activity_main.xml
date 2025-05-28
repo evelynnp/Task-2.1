@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSourceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="170dp"
+        android:text="@string/source_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerSource"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSourceTitle" />
+
+    <TextView
+        android:id="@+id/textDestinationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="170dp"
+        android:text="@string/destination_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSource" />
+
+    <Spinner
+        android:id="@+id/spinnerDestination"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/input_default"
+        app:layout_constraintEnd_toStartOf="@+id/textSourceUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDestination" />
+
+    <TextView
+        android:id="@+id/textSourceUnit"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/input_unit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDestination" />
+
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:text="@string/output_value"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textDestinationUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInput" />
+
+    <TextView
+        android:id="@+id/textDestinationUnit"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/output_unit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textSourceUnit" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="250dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/submit_button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOutput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
